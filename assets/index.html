@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Collector</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <ul id="scoreboard">
+        <li>Time Left: <span id="time">30</span></li>
+        <li><button onclick="startGame();" id="btn">Play</button></li>
+        <li>Score: <span id="score">0</span></li>
+    </ul>
+
+    <div id="scene">
+        <img src="sprites/ground.png" id="ground">
+        <img src="sprites/tree.png" id="tree" style="top:px">
+        <img style="top: 200px; left:100px" src="sprites/apple.png" onclick="fallDown(this)" class="apple">
+        <img style="top: 205px; left:145px" src="sprites/apple.png" onclick="fallDown(this)" class="apple">
+        <img style="top: 170px; left:185px" src="sprites/apple.png" onclick="fallDown(this)" class="apple">
+        <img style="top: 215px; left:220px" src="sprites/apple.png" onclick="fallDown(this)" class="apple">
+        <img style="top: 175px; left: 255px" src="sprites/apple.png" onclick="fallDown(this)" class="apple">
+
+    </div>
+
+    <p style="width: 400px; margin:0 auto;">High: <span id="high">0</span></p>
+
+
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
